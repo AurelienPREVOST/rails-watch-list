@@ -1,4 +1,7 @@
 class Movie < ApplicationRecord
+
+  MOVIES = []
+
   validates :title, presence: true
   validates :title, uniqueness: true
   validates :overview, presence: true
